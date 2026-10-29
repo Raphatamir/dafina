@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dafina Seaside Grill · St Kilda</title>
+<meta name="description" content="Dafina Seaside Grill, 213–215 Barkly Street, St Kilda. Opening 2027.">
+<meta property="og:title" content="Dafina Seaside Grill">
+<meta property="og:description" content="213–215 Barkly Street, St Kilda. Opening 2027.">
+<meta name="theme-color" content="#F7EBCB">
+<link rel="icon" href="tangia.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F7EBCB;
+    --ink: #00187A;
+    --hover: #A0522D;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IM Fell English', Georgia, serif;
+    font-style: italic;
+  }
+  a { color: var(--ink); text-decoration: none; border-bottom: 1px solid rgba(0, 24, 122, 0.3); }
+  a:hover, a:focus-visible { color: var(--hover); border-bottom-color: var(--hover); }
+  .sc { font-family: 'IM Fell English SC', Georgia, serif; font-style: normal; }
+
+  .page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: clamp(40px, 7vh, 88px) 20px clamp(40px, 6vh, 72px);
+  }
+  .card {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: clamp(18px, 1.9vw, 21px);
+    line-height: 1.45;
+  }
+  h1 { margin: 0; width: clamp(260px, 70%, 440px); }
+  h1 img { display: block; width: 100%; height: auto; }
+
+  .rule { width: 64px; height: 1px; background: var(--ink); margin: 28px 0; }
+  .rule.first { margin: 48px 0 28px; }
+  .rule.long { width: 140px; margin: 0 0 10px; }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 6px 32px;
+    width: 100%;
+  }
+  .row.wide { width: min(920px, calc(100vw - 40px)); }
+
+  .tangia { display: block; width: 52px; height: auto; margin: 52px 0 40px; }
+  p { margin: 0; }
+
+  @media (max-width: 640px) {
+    .row { flex-direction: column; align-items: center; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <main class="card">
+
+    <h1><img src="dafina-logo.svg" alt="Dafina Seaside Grill"></h1>
+
+    <div class="rule first" aria-hidden="true"></div>
+
+    <div class="row wide">
+      <span><span class="sc">Get in touch</span>, <a href="mailto:hello@dafina.com.au">hello@dafina.com.au</a></span>
+      <span><span class="sc">Join the team</span>, <a href="mailto:hello@dafina.com.au?subject=Joining%20the%20team">hello@dafina.com.au</a></span>
+      <span><span class="sc">Instagram</span>, <a href="https://www.instagram.com/dafina.seaside/" target="_blank" rel="noopener">@dafina.seaside</a></span>
+    </div>
+
+    <div class="rule" aria-hidden="true"></div>
+
+    <div class="row">
+      <span>213–215 Barkly Street</span>
+      <span>St Kilda 3182</span>
+    </div>
+
+    <img class="tangia" src="tangia.svg" alt="" aria-hidden="true">
+
+    <div class="rule long" aria-hidden="true"></div>
+    <p>Opening 2027</p>
+
+  </main>
+</div>
+</body>
+</html>
